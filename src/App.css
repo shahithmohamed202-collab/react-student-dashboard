@@ -1,0 +1,135 @@
+
+.demo {
+  --page-bg: #ffffff;
+  --text-color: #515b73;
+  --soft-bg: #dfe3eb;
+  --button-text: #596176;
+  --button-bg: #ffffff;
+  --button-border: #e6e8ec;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  background: var(--page-bg);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.demo.is-dark {
+  --page-bg: #171a22;
+  --text-color: #e6e9f0;
+  --soft-bg: #343a49;
+  --button-text: #e6e9f0;
+  --button-bg: #252a35;
+  --button-border: #454c5c;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  padding: 10px 16px;
+  background: var(--soft-bg);
+  color: var(--button-text);
+  font-size: 16px;
+}
+
+.demo-card {
+  width: 100%;
+  padding: 15px 0 40px 1px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.count {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.button {
+  border: 0;
+  border-radius: 18px;
+  padding: 13px 24px;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.primary {
+  padding: 15px 24px;
+  background: #525867;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 12px 12px rgba(50, 55, 66, 0.18);
+  border-radius: 18px;
+}
+
+.counter-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.reset {
+  padding: 15px 24px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 18px;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 18px 0;
+  white-space: nowrap;
+}
+
+.delete {
+  background: var(--button-bg);
+  color: #ff83a2;
+  border: 1px solid var(--button-border);
+  border-radius: 14px;
+  padding: 12px 22px;
+}
+
+.outline {
+  background: var(--soft-bg);
+  color: var(--button-text);
+  border-radius: 14px;
+  padding: 12px 22px;
+}
+
+.secondary {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 14px;
+  padding: 12px 22px;
+}
+
+.ghost {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-border);
+  border-radius: 14px;
+  padding: 12px 22px;
+}
+
+.copy p {
+  margin: 0 0 12px 0;
+  color: var(--text-color);
+  font-size: 32px;
+  line-height: 1.3;
+}
